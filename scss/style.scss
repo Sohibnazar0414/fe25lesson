@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Kumbh+Sans:wght@400;700&family=Roboto:wght@100;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    padding: 110px;
+
+}
+.container{
+    max-width: 920px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    .card{
+        display: flex;
+        padding: 65px 95px 65px 0;
+        // margin-top: 110px;
+        .img{
+            transform: translateX(-70px);
+            .logo{
+                display: block;
+                position: relative;
+                max-width: 472px;
+                // background-color: aqua;
+                .kub{
+                   position: absolute;
+                   top: 120px;
+                   right: 300px;
+                }
+            }
+            .logo1{
+                display: none;
+            }
+        }
+        .text{
+            h1{
+                margin-bottom: 43px;
+            }
+            .inpt{
+                margin-bottom: 16px;
+                .inpt__one{
+                    .btn__text{
+                        display: flex;
+                        justify-content: space-between;
+                        // margin-left: 20px;
+                        max-width: 350px;
+                        margin-bottom: 18px;
+                       
+                        h3{
+                            font-family: Kumbh Sans, sans-serif;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 17px;
+                            color: #4B4C5F;
+                            cursor: pointer;
+                            
+                        }
+                        h3:hover{
+                            color: 
+                            #F47B56;
+                        }
+                        img{
+                           margin-left: 70px; 
+                        }
+                    }
+                    .your{
+                        display: flex;
+                        flex-direction: column;
+                        .pol{
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 11px;
+                            h3{
+                                color: #1E1F36;
+                            }
+                            h3:hover{
+                                color: 
+                            #F47B56;
+                            }
+                        }
+                        p{
+                            font-family: Kumbh Sans, sans-serif;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            color: #787887;
+                        }
+                        img{
+                            max-width: 10px;
+                        }
+                    }
+                    .list{
+                        max-width: 350px;
+                        height: 1px;
+                        background-color: #E8E8EA;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:1000px){
+    
+    .container{
+        
+        
+        .card{
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            .img{
+                margin-left: 200px;
+                margin-top: -170px;
+                .logo{
+                    display: none;
+                }
+                .logo1{
+                    display: block;
+                }
+            }
+            .text{
+                // background-color: aqua;
+                padding: 0 20px;
+                align-items: center;
+                max-width: 100%;
+                margin-left: 100px;
+                .inp{
+                    display: flex;
+                    
+                    justify-content: center;
+                }
+            }
+            // justify-content: center;
+        }
+    }
+    
+}
